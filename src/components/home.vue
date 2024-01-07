@@ -108,7 +108,7 @@ return{
     // Simulate a 2-second delay for demonstration purposes
     setTimeout(() => {
       this.loading = false; // Set loading state to false after 2 seconds
-    }, 1200);
+    }, 2500);
   },
   };
 </script>
