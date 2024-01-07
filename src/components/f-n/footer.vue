@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full justify-center items-center border-t">
+    <div class="flex w-full justify-center items-center border-t relative z-[9999] bg-black text-[#D2A44C] border-t-[#D2A44C] ">
         <ul class="w-[1350px] flex justify-between items-center p-4 max-[360px]:flex-col max-[360px]:text-center">
             <li class="min-[361px]:hidden"><img src="/photos/newlogo-removedbg.png" alt="" class="w-[100px] "></li>
             <li class="flex flex-col gap-[0.2em]  max-[360px]:py-8">
