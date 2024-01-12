@@ -39,7 +39,7 @@ Stambena građevina će se priključiti na gradske mreže električne energije, 
 
 Mogućnost priključka plina uz samu blizinu nekretnine.<br>
 <br>
-CIJENA: <b>1700.00 €/m2</b> <br>
+CIJENA: <b>1600.00 €/m2</b> <br>
 <br>
 
 KONTAKT: <br>
