@@ -9,7 +9,7 @@
     <div class="text-center py-4 text-[#D2A44C] bg-black font-bold" style="font-size: calc(2vw + 1.5em);">
         PROJEKTI
     </div>
-    <div class="w-full flex justify-center items-start bg-black h-[100vh]">
+    <div class="w-full flex justify-center items-start bg-black h-[100vh] max-[512px]:h-full">
       <ul class="flex flex-wrap w-[90%] items-start justify-center pt-[2em] text-[22px] ">
     <li v-for="project in projects" :key="project.id" class="mx-[15px] mb-[30px] overed_card ">
       <router-link :to="{ name: 'project-details', params: { id: project.id }}" class="flex justify-start items-start flex-col max-[985px]:w-[200px] max-[512px]:w-[100%] relative">
