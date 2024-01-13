@@ -13,7 +13,7 @@
     <!-- Fullscreen Gallery -->
     <div v-if="fullscreenImage" class="fullscreen-gallery">
       <button @click="navigateFullscreen(-1)" class="nav-button left-button">Previous</button>
-      <img :src="`/photos_working/${fullscreenImage}`" alt="">
+      <img loading="lazy" :src="`/photos_working/${fullscreenImage}`" alt="">
       <button @click="navigateFullscreen(1)" class="nav-button right-button">Next</button>
       <button @click="closeFullscreen" class="close-button">Close</button>
     </div>

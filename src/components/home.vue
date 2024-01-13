@@ -2,7 +2,7 @@
   <transition name="fade">
   <div v-if="loading" class="page-loader flex flex-col">
       <!-- Add your loading spinner or animation here -->
-      <img src="/photos/newlogo-removedbg.png" alt="" class="w-[280px] pb-8">
+      <img loading="lazy" src="/photos/newlogo-removedbg.png" alt="" class="w-[280px] pb-8">
       <div class="loader"></div>
     </div>
   </transition>
@@ -16,32 +16,32 @@
      >
      <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo1.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo1.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
     <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo2.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo2.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
     <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo3.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo3.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
     <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo4.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo4.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
     <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo5.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo5.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
     <swiper-slide>
       <div class="swiper-image-wrapper">
-        <img src="/photos_working/photo6.webp" alt="" class="object-cover w-[full] h-[full] ">
+        <img loading="lazy" src="/photos_working/photo6.webp" alt="" class="object-cover w-[full] h-[full] ">
       </div>
     </swiper-slide>
   </swiper>
@@ -56,13 +56,19 @@
 <div class="w-full flex justify-center items-center relative z-[999] bg-black border-t border-[#D2A44C]">
   <div class="w-[1300px] flex justify-between items-start text-[#D2A44C] py-16  mx-4">
     <div class="w-[40%] max-[550px]:w-full">
-      <p class="font-bold" style="font-size: calc(2vw + 0.5em);">O NAMA</p>
-      <p class="py-6 pb-12" style="font-size: calc(1vw + 10px);">uz realnu cijenu iste novoizgrađene nekretnine, možete uštediti između 30.000 do 60.000 Eura.</p>
-      <p class="font-bold" style="font-size: calc(1vw + 15px);">NAŠA MISIJA</p>
-      <p class="py-6" style="font-size: calc(1vw + 10px);">Naša firma pruža kompletnu podršku u pronalasku idealnih parcela za vaše potrebe, te u procesu ishođenja dozvola, rješavanja idejnih projekata i svih potrebnih dozvola za vašu gradnju. Pouzdano izvodimo građenje kako bismo vašu viziju pretvorili u stvarnost.</p>
+      <p class="font-bold" style="font-size: calc(2vw + 0.3em);">O NAMA</p>
+      <p class="py-6 pb-12" style="font-size: calc(1vw + 4px);">Naša firma pruža kompletnu podršku u pronalasku idealnih parcela za vaše potrebe, te u procesu ishođenja dozvola, rješavanja idejnih projekata i svih potrebnih dozvola za vašu gradnju. Pouzdano izvodimo građenje kako bismo vašu viziju pretvorili u stvarnost.</p>
+      <p class="font-bold" style="font-size: calc(1vw + 15px);">USLUGE</p>
+      <ul class="py-6" style="font-size: calc(1vw + 10px);">
+        <li>- Zidarskofasaderske</li>
+        <li>- Krovopokrivacke</li>
+        <li>- Soboslikarske radove</li>
+        <li>- Uređenje okoliša</li>
+        <li>- Zidanje obiteljskih kuća</li>
+      </ul>
       <button @click="toGalerija" class="border border-black bg-[#D2A44C] w-[40%] mt-[0.8em] py-3 text-black font-bold max-[870px]:w-[80%] ">POGLEDAJ VIŠE</button>
     </div>
-    <img src="/photos/man.png" alt="" class="object-fit w-[40%] max-[1000px]:w-[50%] max-[550px]:hidden">
+    <img loading="lazy" src="/photos/man.png" alt="" class="object-fit w-[40%] max-[1000px]:w-[50%] max-[550px]:hidden">
   </div>
 </div>
     </div>
