@@ -9,25 +9,7 @@
     <div class="text-center py-4 text-[#D2A44C] bg-black font-bold" style="font-size: calc(2vw + 1.5em);">
         PROJEKTI
     </div>
-    <div class="w-full flex justify-center items-start bg-black h-[100vh] max-[512px]:h-full">
-      <ul class="flex flex-wrap w-[90%] items-start justify-center pt-[2em] text-[22px] ">
-    <li v-for="project in projects" :key="project.id" class="mx-[15px] mb-[30px] overed_card ">
-      <router-link :to="{ name: 'project-details', params: { id: project.id }}" class="flex justify-start items-start flex-col max-[985px]:w-[200px] max-[512px]:w-[100%] relative">
-  <div class="relative">
-    <img loading="lazy" :src="getImagePath(project.image)" alt="Project Image" class="w-[413px] max-h-[270px] h-[270px] object-cover max-[985px]:h-[700px]" />
-    <div class="absolute bottom-0 left-0 right-0 text-center text-[15px] import_font  text-[#D2A44C] font-bold" style="background: rgba(0, 0, 0, 0.5); height: 50px; line-height: 50px;">
-      Pogledaj više
-    </div>
-  </div>
-  <p class="pt-4 text-hover text-[18px] import_font text-size_pr text-[#D2A44C]">{{ project.name }}</p>
-  <p class="pt-4 text-hover text-[18px] import_font text-size_pr text-[#D2A44C] font-bold">{{ project.cijena }}</p>
-</router-link>
-
-
-
-    </li>
-  </ul>
-  </div>
+    <div class="h-[100vh] bg-black">a</div>
 </template>
 
 <script>
