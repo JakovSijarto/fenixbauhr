@@ -5,12 +5,12 @@
         <ul class="flex gap-[2.5em] pr-4 max-[420px]:px-4 text-[#D2A44C] text-[13px] uppercase max-[800px]:hidden">
             <li class=""><router-link to="/">Početna</router-link></li>
             <li class=""><router-link to="/galerija">Galerija</router-link></li>
-            <li class=""><router-link to="/projekti">Projekti</router-link></li>
+            <li class=""><router-link to="/kontakt">Kontakt</router-link></li>
         </ul>
          <div class="overlay flex flex-col text-[#D2A44C]" :class="{ active: isActive }">
     <router-link to="/" @click="clickLink" class="hover-effect animation-text">Početna</router-link>
     <router-link to="/galerija" @click="clickLink" class="hover-effect animation-text">Galerija</router-link>
-    <router-link to="/projekti" @click="clickLink" class="hover-effect animation-text">Projekti</router-link>
+    <router-link to="/kontakt" @click="clickLink" class="hover-effect animation-text">Kontakt</router-link>
   </div>
   <div class="hamb_menu min-[801px]:hidden">
     <input id="checkbox" type="checkbox" :checked="isActive" @change="showMobile">

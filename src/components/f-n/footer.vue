@@ -16,7 +16,7 @@
                     <router-link to="/galerija">Galerija</router-link>
                 </span>
                 <span>
-                    <router-link to="/projekti">Projekti</router-link>
+                    <router-link to="/kontakt">Kontakt</router-link>
                 </span>
             </li>
         </ul>

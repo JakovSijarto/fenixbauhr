@@ -56,17 +56,17 @@
 <div class="w-full flex justify-center items-center relative z-[999] bg-black border-t border-[#D2A44C]">
   <div class="w-[1300px] flex justify-between items-start text-[#D2A44C] py-16  mx-4">
     <div class="w-[40%] max-[550px]:w-full">
-      <p class="font-bold" style="font-size: calc(2vw + 0.3em);">O NAMA</p>
-      <p class="py-6 pb-12" style="font-size: calc(1vw + 4px);">Naša firma pruža kompletnu podršku u pronalasku idealnih parcela za vaše potrebe, te u procesu ishođenja dozvola, rješavanja idejnih projekata i svih potrebnih dozvola za vašu gradnju. Pouzdano izvodimo građenje kako bismo vašu viziju pretvorili u stvarnost.</p>
-      <p class="font-bold" style="font-size: calc(1vw + 15px);">USLUGE</p>
-      <ul class="py-6" style="font-size: calc(1vw + 10px);">
+      <p class="font-bold max-[550px]:!text-[25px]" style="font-size: calc(2vw + 0.3em);">O NAMA</p>
+      <p class="py-6 pb-12 max-[550px]:!text-[15px]" style="font-size: calc(1vw + 4px);">Naša firma pruža kompletnu podršku u pronalasku idealnih parcela za vaše potrebe, te u procesu ishođenja dozvola, rješavanja idejnih projekata i svih potrebnih dozvola za vašu gradnju. Pouzdano izvodimo građenje kako bismo vašu viziju pretvorili u stvarnost.</p>
+      <p class="font-bold max-[550px]:!text-[25px]" style="font-size: calc(1vw + 15px);">USLUGE</p>
+      <ul class="py-6 max-[550px]:!text-[15px]" style="font-size: calc(1vw + 10px);">
         <li>- Zidarskofasaderske</li>
         <li>- Krovopokrivacke</li>
         <li>- Soboslikarske radove</li>
         <li>- Uređenje okoliša</li>
         <li>- Zidanje obiteljskih kuća</li>
       </ul>
-      <button @click="toGalerija" class="border border-black bg-[#D2A44C] w-[40%] mt-[0.8em] py-3 text-black font-bold max-[870px]:w-[80%] ">POGLEDAJ VIŠE</button>
+      <button @click="toGalerija" class="border border-black bg-[#D2A44C] w-[40%] max-[550px]:w-full mt-[0.8em] py-3 text-black font-bold max-[870px]:w-[80%] ">POGLEDAJ VIŠE</button>
     </div>
     <img loading="lazy" src="/photos/man.png" alt="" class="object-fit w-[40%] max-[1000px]:w-[50%] max-[550px]:hidden">
   </div>

@@ -12,10 +12,10 @@
     <div class="bg-black w-full flex justify-center items-center">
     <!-- Fullscreen Gallery -->
     <div v-if="fullscreenImage" class="fullscreen-gallery">
-      <button @click="navigateFullscreen(-1)" class="nav-button left-button">Previous</button>
+      <button @click="navigateFullscreen(-1)" class="nav-button left-button">&#10092;</button>
       <img loading="lazy" :src="`/photos_working/${fullscreenImage}`" alt="">
-      <button @click="navigateFullscreen(1)" class="nav-button right-button">Next</button>
-      <button @click="closeFullscreen" class="close-button">Close</button>
+      <button @click="navigateFullscreen(1)" class="nav-button right-button">&#10093;</button>
+      <button @click="closeFullscreen" class="close-button">x</button>
     </div>
 
     <!-- Original Gallery -->
@@ -124,13 +124,15 @@ return { fullscreenImage, images, onSlideChange, openFullscreen, closeFullscreen
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000;
+  color: #fff;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-size: 4rem;
 }
-
+.nav-button:hover{
+  color:#D2A44C;
+}
 .fullscreen-gallery .left-button {
   left: 10px;
 }
@@ -142,9 +144,10 @@ return { fullscreenImage, images, onSlideChange, openFullscreen, closeFullscreen
 .fullscreen-gallery .close-button {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 50px;
   color: #fff;
   cursor: pointer;
+  font-size: 3rem;
 }
 .page-loader {
   position: fixed;
