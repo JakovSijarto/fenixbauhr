@@ -2,9 +2,9 @@
   <div class="flex justify-center flex-col bg-black items-center w-full" id="contact">
      <div class="flex justify-between w-[1340px] items-center pt-[100px] max-[1370px]:flex-col max-[1370px]:w-full max-[1370px]:pt-[50px] px-8">
              <div class="w-full mb-[6em]">
-                 <form ref="form" @submit="sendEmail">
+                 <form ref="form" @submit.prevent="sendEmail">
                  <p class="text-center latofont text-[35px] font-bold mb-[5px] text-[#D2A44C]">Pošaljite nam poruku!</p>
-                 <p class="text-center catamaran mb-[30px] text-[#D2A44C]">Za više informacija o našem prijevozu stupimo u kontakt</p>
+                 <p class="text-center catamaran mb-[30px] text-[#D2A44C]">Za više informacija o nama stupimo u kontakt</p>
                  <div class="flex gap-[2em] w-[full] justify-between mb-[20px] max-[640px]:flex-col">
                      <div class="w-[50%] max-[640px]:w-full">
                          <p class="mb-[5px] text-[#D2A44C] font-bold">Ime</p>
@@ -52,6 +52,7 @@
 
 <script>
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 export default {
 data(){
@@ -65,11 +66,16 @@ poruka:""
 methods: {
 sendEmail() {
 emailjs.sendForm('service_26j234o', 'template_a1dya2y', this.$refs.form, 'tGrrFjuKCc7u6wh3f')
- .then((result) => {
-      console.log('SUCCESS!', result.text);
- }, (error) => {
-     console.log('FAILED...', error.text);
- });
+.then((result) => {
+             console.log('SUCCESS!', result.text);
+            swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
+"success"}).then(function(){ 
+   location.reload();
+   }
+);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
  
 },
 
@@ -77,3 +83,20 @@ emailjs.sendForm('service_26j234o', 'template_a1dya2y', this.$refs.form, 'tGrrFj
 
 }
 </script>
+<style>
+.swal-overlay--show-modal .swal-modal{
+    background: #000 !important;
+    border: 1px solid #D2A44C !important;
+    
+}
+.swal-title{
+    color: #D2A44C !important;
+}
+.swal-text{
+    color: #D2A44C !important;
+}
+.swal-button{
+    background: #D2A44C !important;
+    color: white !important;
+}
+</style>
